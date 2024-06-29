@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="367dp"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:onClick="resimSec"
+        app:srcCompat="@drawable/add_image" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/imageView4"
+
+        app:cardBackgroundColor="#eacaff"
+        app:cardCornerRadius="15dp"
+        app:contentPaddingBottom="20dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingTop="20dp">
+
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sehiradi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Şehir Adı"
+                    app:layout_constraintEnd_toStartOf="@+id/ulkeadi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5" />
+
+                <EditText
+                    android:id="@+id/ulkeadi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ülke Adı"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/sehiradi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/ozetbilgi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehir Hakkında Özet Bilgi"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/tarihvekultur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehrin Tarihi ve Kültürü"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/dogalguzellikler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Doğal Güzellikler"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/mutfak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehrin Mutfağı"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/ekonomiveturizm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehrin Ekonomisi ve Turizmi"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/yazaryorumu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehir Hakkında Yazar Yorumu"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/valiliklink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehir Valilik Linki"
+                 />
+
+            <EditText
+                android:id="@+id/belediyelink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehir Belediye Linki"
+                 />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kaydet"
+                android:text="Şehri Ekle" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+</ScrollView>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCityPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/card_view"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/addViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp"
+        android:id="@+id/card_view"
+        app:contentPaddingBottom="20dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingTop="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textasd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şehir Ekle"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tesxtasdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tüm Detayları Buradan Ekleyebilirsin"
+            android:alpha="0.7"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sehiradi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Şehir Adı"
+                    app:layout_constraintEnd_toStartOf="@+id/ulkeadi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5" />
+
+                <EditText
+                    android:id="@+id/ulkeadi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ülke Adı"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/sehiradi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/ozetbilgi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehir Hakkında Özet Bilgi"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/tarihvekultur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehrin Tarihi ve Kültürü"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/dogalguzellikler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Doğal Güzellikler"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/mutfak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehrin Mutfağı"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/ekonomiveturizm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehrin Ekonomisi ve Turizmi"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/yazaryorumu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehir Hakkında Yazar Yorumu"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/valiliklink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehir Valilik Linki"
+                />
+
+            <EditText
+                android:id="@+id/belediyelink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Şehir Belediye Linki"
+                />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kaydet"
+                android:text="Şehri Ekle" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

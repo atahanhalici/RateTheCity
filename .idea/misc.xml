@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.236" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/drawable/border_background.xml" value="0.2925" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/drawable/border_backgrounds.xml" value="0.236" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/drawable/custom_rating_bar.xml" value="0.196" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/drawable/ratingstars.xml" value="0.2925" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_add_city_page.xml" value="0.33" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_cities_page.xml" value="0.22" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_login_page.xml" value="0.34148550724637683" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_login_page2.xml" value="0.34148550724637683" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_main.xml" value="0.3237668161434978" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_register_page.xml" value="0.33" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_splash_page.xml" value="0.338768115942029" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_user_filter.xml" value="0.28854166666666664" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_vote_page.xml" value="0.34148550724637683" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/activity_web_view.xml" value="0.338768115942029" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/content_login_page.xml" value="0.28854166666666664" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/layout/list_view_items.xml" value="0.309375" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/menu/context_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/menu/main_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/menu/sirala_menu.xml" value="0.35104166666666664" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.236" />
+        <entry key="..\:/javaMobileProjects/RateTheCity/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.236" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

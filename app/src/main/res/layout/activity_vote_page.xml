@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VotePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/card_view"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp"
+        android:id="@+id/card_view"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:id="@+id/sehiradi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aciklama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şehri Belirli Kriterlere Göre Puanlayabilirsiniz"
+                android:alpha="0.7"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/ozellik1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="Tarih ve Kültür:"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+               android:layout_gravity="center"
+                android:stepSize="1.0" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+            <TextView
+                android:id="@+id/ozellik2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğal Güzellikler:"
+                android:alpha="0.7"
+                android:textStyle="bold"/>  <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+            <RatingBar
+                android:id="@+id/rating2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_gravity="center"
+                android:stepSize="1.0" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+
+            <TextView
+                android:id="@+id/ozellik3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="Mutfağı:"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+            <RatingBar
+                android:id="@+id/rating3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_gravity="center"
+                android:stepSize="1.0" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+            <TextView
+                android:id="@+id/ozellik4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ekonomi ve Turizm:"
+                android:alpha="0.7"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"/>
+            <RatingBar
+                android:id="@+id/rating4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_gravity="center"
+                android:stepSize="1.0" />
+
+
+
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Puanları Kaydet"
+                app:backgroundTint="#000000"
+                android:onClick="puanKaydet"
+                app:cornerRadius="32dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<!-- res/menu/my_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_addCity"
+        android:title="Şehir Ekle"
+         />
+    <item
+        android:id="@+id/action_userFilter"
+        android:title="Kullanıcı Ara"
+         />
+    <item
+        android:id="@+id/action_sort"
+        android:title="Sırala"
+       >
+        <menu>
+            <item
+                android:id="@+id/sort_by_date_desc"
+                android:title="Tarihe Göre (Eskiden-Yeniye)" />
+            <item
+                android:id="@+id/sort_by_date_asc"
+                android:title="Tarihe Göre (Yeniden-Eskiye)" />
+            <item
+                android:id="@+id/sort_by_rating_desc"
+                android:title="Puana Göre (Çoktan-Aza)" />
+            <item
+                android:id="@+id/sort_by_rating_asc"
+                android:title="Puana Göre (Azdan-Çoğa)" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_logout"
+        android:title="Çıkış Yap"
+
+         />
+</menu>
